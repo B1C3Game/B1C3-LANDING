@@ -1,0 +1,376 @@
+:root {
+  --bg: #f3f1ea;
+  --surface: #fbfaf6;
+  --ink: #202823;
+  --ink-soft: #4d5a52;
+  --accent: #1f4b6e;
+  --accent-alt: #2f5d4b;
+  --line: #cad4cc;
+  --maxw: 1080px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(1000px 500px at 15% -10%, rgba(31, 75, 110, 0.18), transparent 65%),
+    radial-gradient(800px 400px at 100% 0%, rgba(47, 93, 75, 0.16), transparent 65%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 63px,
+      rgba(32, 40, 35, 0.04) 64px,
+      rgba(32, 40, 35, 0.04) 65px
+    );
+}
+
+.site-header {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.05rem;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(251, 250, 246, 0.75);
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+main,
+.site-footer {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero {
+  padding: 4.5rem 0 3rem;
+}
+
+.eyebrow {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-alt);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  line-height: 1.2;
+  margin: 0 0 0.7rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  max-width: 18ch;
+}
+
+.lead {
+  max-width: 65ch;
+  color: var(--ink-soft);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.62rem 1rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button.primary {
+  background: var(--accent);
+  color: #f8fbff;
+}
+
+.button.primary:hover {
+  background: #173a55;
+}
+
+.button.ghost {
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: rgba(251, 250, 246, 0.75);
+}
+
+.panel {
+  margin-top: 1.6rem;
+  padding: 1.3rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.principles,
+.cards {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.principles article,
+.card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.8rem;
+  background: rgba(243, 241, 234, 0.6);
+}
+
+.card a {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.section-intro,
+.credibility {
+  color: var(--ink-soft);
+}
+
+.source-note {
+  margin-top: 0.5rem;
+}
+
+.openclaw-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.18rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(243, 241, 234, 0.65);
+  color: var(--ink-soft);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+}
+
+.openclaw-emoji {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.openclaw-badge a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.openclaw-badge a:hover {
+  text-decoration: underline;
+}
+
+.b1c3-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.18rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(243, 241, 234, 0.65);
+  color: var(--ink-soft);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  margin-left: 0.5rem;
+}
+
+.b1c3-emoji {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.b1c3-badge a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.b1c3-badge a:hover {
+  text-decoration: underline;
+}
+
+.proof-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.proof-item {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.8rem;
+  background: rgba(243, 241, 234, 0.6);
+}
+
+blockquote.proof-result {
+  margin: 1.2rem 0 0;
+  padding: 0.9rem 1.2rem;
+  border-left: 3px solid var(--accent);
+  background: rgba(31, 75, 110, 0.07);
+  border-radius: 0 8px 8px 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.88rem;
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+.steps {
+  padding-left: 1.2rem;
+}
+
+.site-footer {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.motif svg {
+  width: min(360px, 100%);
+  height: auto;
+  transform: perspective(760px) rotateX(7deg) rotateY(-8deg);
+  transform-origin: 50% 50%;
+}
+
+.motif .motif-spokes {
+  filter: drop-shadow(0 1px 1px rgba(24, 34, 44, 0.24));
+}
+
+.motif .spoke {
+  fill: url(#motifSpoke);
+  opacity: 0.92;
+}
+
+.motif .node {
+  stroke: #f2eee5;
+  stroke-width: 1.6;
+}
+
+.motif .node-light {
+  fill: url(#motifNodeLight);
+  opacity: 0.9;
+}
+
+.motif .node-emphasis {
+  fill: url(#motifCenter);
+  stroke: #fbf8f0;
+  stroke-width: 2;
+  filter: drop-shadow(0 2px 2px rgba(18, 25, 32, 0.28));
+}
+
+.micro {
+  font-family: "JetBrains Mono", monospace;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+}
+
+a:focus-visible,
+.button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: reveal 620ms ease-out forwards;
+}
+
+.hero {
+  animation-delay: 0.1s;
+}
+
+#philosophy {
+  animation-delay: 0.22s;
+}
+
+#projects {
+  animation-delay: 0.34s;
+}
+
+#proof {
+  animation-delay: 0.44s;
+}
+
+#collaborate {
+  animation-delay: 0.54s;
+}
+
+.site-footer {
+  animation-delay: 0.64s;
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 840px) {
+  .principles,
+  .cards,
+  .proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header {
+    gap: 0.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    padding-top: 2.4rem;
+  }
+}
