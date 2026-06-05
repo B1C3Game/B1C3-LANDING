@@ -1,8 +1,19 @@
 # B1C3 Landing
 
-Standalone landing-page repository for B1C3.
+Legacy landing-page repository for B1C3.
 
 Repository: https://github.com/B1C3Game/B1C3-LANDING
+
+## Status
+
+This repository is a historical public landing artifact.
+It is no longer the right long-term front door for B1C3.
+
+The replacement path is:
+
+- `C:\2\B1C3\B1C3-LANDING-NEO`
+
+This older landing remains useful as a proof breadcrumb because it captures part of the `multi-agent-collab-test` story, but it should not define current brand positioning.
 
 ## Live URLs
 
@@ -13,8 +24,8 @@ Repository: https://github.com/B1C3Game/B1C3-LANDING
 
 ## Notes
 
-- This repo is intended to decouple the landing page from the POC repo.
+- This repo was intended to decouple the landing page from the POC repo.
 - Historical note: the site was originally built and validated in the POC at https://b1c3game.github.io/multi-agent-collab-test/.
-- This repository is the semi-permanent home for the site until a dedicated web server is in place (for example on AWS).
+- This repository should now be treated as a legacy landing until the replacement path is ready to take over.
 - The landing page includes direct links to the blog.
 - Static site only: `index.html`, `style.css`, `favicon.svg`.
