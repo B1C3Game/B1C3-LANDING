@@ -1,0 +1,53 @@
+# B1C3 Landing — robots.txt
+# Contact: contact@b1c3.dev
+
+User-agent: *
+Allow: /
+
+# AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Gemini
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookExternalUA
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+Sitemap: https://b1c3game.github.io/B1C3-LANDING/sitemap.xml
