@@ -50,4 +50,4 @@ Allow: /
 User-agent: PetalBot
 Allow: /
 
-Sitemap: https://b1c3game.github.io/B1C3-LANDING/sitemap.xml
+Sitemap: https://b1c3.dev/sitemap.xml
