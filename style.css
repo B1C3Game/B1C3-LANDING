@@ -122,6 +122,66 @@ h1 {
   flex-wrap: wrap;
 }
 
+.sense-visual {
+  margin: 0.8rem 0 1.2rem;
+}
+
+.sense-figure {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #6b9ac4;
+}
+
+.sense-figure img {
+  display: block;
+  width: 100%;
+  height: min(52vh, 560px);
+  object-fit: cover;
+  object-position: center 36%;
+}
+
+.sense-figure figcaption {
+  padding: 0.7rem 0.9rem 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(243, 241, 234, 0.9);
+  color: var(--ink-soft);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.clarity-visual {
+  margin: 0.8rem 0 1.2rem;
+}
+
+.clarity-figure {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #6b9ac4;
+}
+
+.clarity-figure img {
+  display: block;
+  width: 100%;
+  height: min(52vh, 560px);
+  object-fit: cover;
+  object-position: center 36%;
+}
+
+.clarity-figure figcaption {
+  padding: 0.7rem 0.9rem 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(243, 241, 234, 0.9);
+  color: var(--ink-soft);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
 .button {
   display: inline-block;
   border-radius: 999px;
