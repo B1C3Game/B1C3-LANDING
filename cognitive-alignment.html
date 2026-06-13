@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=4">
+  <link rel="shortcut icon" href="favicon.svg?v=4">
+  <title>B1C3 | Cognitive Alignment in Multi-Agent Systems</title>
+  <meta name="description" content="System design through cognitive alignment: making multi-agent abstractions legible and operationally sound.">
+  <link rel="canonical" href="https://b1c3.dev/cognitive-alignment.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="B1C3 | Cognitive Alignment in Multi-Agent Systems">
+  <meta property="og:description" content="System design through cognitive alignment: making multi-agent abstractions legible and operationally sound.">
+  <meta property="og:url" content="https://b1c3.dev/cognitive-alignment.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/analytics-config.js"></script>
+  <script defer src="js/analytics.js"></script>
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="B1C3 Home">B1C3</a>
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="index.html#philosophy">Philosophy</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#collaborate">Collaborate</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero reveal">
+      <p class="eyebrow">System design through vocabulary alignment and operational substrate.</p>
+      <h1>Cognitive Alignment in Multi-Agent Systems</h1>
+      <p class="lead">
+        Making system abstractions naturally legible by aligning them with human mental models, tested through reproducible evaluation.
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <h2>Core Question</h2>
+      <p>
+        How do you make multi-agent systems where each agent's role, memory, and decision-making process are inherently legible to humans?
+      </p>
+      <p>
+        Most systems treat cognitive frameworks as cosmetic UI decoration. This research makes cognition operational: vocabulary, memory semantics, and routing logic all serve the same substrate—making what agents do match what humans expect.
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <h2>The System: Three Operational Layers</h2>
+      <p>
+        The runtime name <strong>Fraga</strong> comes from Swedish <strong>fraga</strong> (fraga nagon vuxen, "ask a grown-up").
+        The model is simple: if an agent is not the right grown-up for a question, it should pass the work to someone who is.
+      </p>
+      <div class="principles">
+        <article>
+          <h3>SOUL: Semantic Identity</h3>
+          <p>
+            Each agent is bound to a vocabulary register—cognitive, technical, legal, care, generational, metadata precision. 
+            This isn't decoration; it governs how the agent parses problems and routes work.
+          </p>
+          <p class="note">
+            Example: the word "boundary" has 4 semantic frames—personal limit, spatial edge, scope of authority, psychological defense. SOUL agents use the right frame for their context.
+          </p>
+        </article>
+        <article>
+          <h3>Aishna: Narrative Memory</h3>
+          <p>
+            Append-only narrative log indexed for recall. Agents don't just have state; they inherit documented context from prior moves, making decisions auditable.
+          </p>
+          <p class="note">
+            Result: memory hit rate improved from 75% to 100%, mean relevance score +0.737.
+          </p>
+        </article>
+        <article>
+          <h3>Fraga: Runtime Coordination</h3>
+          <p>
+            Routes problems to the right agent (or conferences multiple agents) based on semantic register alignment. It behaves like responsible delegation: "I can handle this," "I should ask a different grown-up," or "we need several grown-ups in conference."
+          </p>
+          <p class="note">
+            Result: 8/8 routing scenarios pass with precision/recall/F1 = 1.00; integrity checks validate.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <h2>Reproducible Evaluation</h2>
+      <p>
+        This work is tested, not speculated. Reproducible means another person can run the same scenarios, with the same rules, and get the same class of outcomes.
+      </p>
+      <p>
+        Think of it like a driving test route, not a one-time road trip story. The route is fixed, the scoring criteria are explicit, and the result can be checked repeatedly.
+      </p>
+      <p>
+        In plain language: this section is not saying "the system feels smart." It is saying "when given known question types, it consistently picks the right grown-up, recalls the right context, and produces outputs that pass integrity checks."
+      </p>
+      <div class="results-grid">
+        <article class="result-item">
+          <h3>Routing Accuracy</h3>
+          <p class="metric">8/8 scenarios</p>
+          <p>Precision / Recall / F1 = 1.00</p>
+          <p>Problems correctly routed to semantic-aligned agents.</p>
+        </article>
+        <article class="result-item">
+          <h3>Memory Recall Quality</h3>
+          <p class="metric">+0.737</p>
+          <p>Mean relevance improvement (indexed vs. unindexed)</p>
+          <p>Hit rate: 75% → 100%</p>
+        </article>
+        <article class="result-item">
+          <h3>Synthesis Integrity</h3>
+          <p class="metric">5/5 scenarios</p>
+          <p>Multi-agent conference outputs pass integrity checks</p>
+          <p>Deterministic replay validation confirmed.</p>
+        </article>
+        <article class="result-item">
+          <h3>Operational Durability</h3>
+          <p class="metric">Release Gate Pass</p>
+          <p>Contract validation, failure handling, deterministic replay all verified.</p>
+          <p>System production-ready for scoped use.</p>
+        </article>
+      </div>
+      <div class="evaluation-context">
+        <h3>Real-World Analogy</h3>
+        <p>
+          Imagine a clinic front desk. A patient arrives with a question. The first staff member should not pretend to be every specialist.
+          Good routing means sending billing questions to billing, legal consent issues to legal/compliance, and medical decisions to clinicians.
+        </p>
+        <p>
+          Fraga applies that same discipline to agent systems: route first, remember context, then respond with the right role.
+          The evaluation checks whether that discipline holds up run after run.
+        </p>
+      </div>
+      <div class="metric-meaning">
+        <h3>What These Results Prove in Practice</h3>
+        <ul>
+          <li><strong>Routing Accuracy:</strong> In the clinic analogy, the front desk sends the person to the right specialist. In Fraga, the runtime sends the question to the right agent role instead of guessing.</li>
+          <li><strong>Memory Recall Quality:</strong> The specialist receives the right chart, not random notes. In Fraga, the selected agent gets relevant prior context, so responses are grounded instead of drifting.</li>
+          <li><strong>Synthesis Integrity:</strong> When several specialists are involved, the final plan stays coherent. In Fraga, multi-agent conference outputs remain consistent and pass integrity checks.</li>
+          <li><strong>Operational Durability:</strong> The process works reliably every shift, not just once. In Fraga, validation, replay, and failure handling confirm the system can repeat behavior under the same constraints.</li>
+        </ul>
+        <p>
+          Together, these results prove <strong>disciplined coordination</strong>: route correctly, carry context correctly, combine outputs coherently, and repeat the process reliably.
+        </p>
+        <p>
+          They do <strong>not</strong> prove universal intelligence or broad real-world generalization yet. They prove that this operational pattern works on scoped, reproducible tests.
+        </p>
+      </div>
+
+    </section>
+
+    <section class="panel reveal">
+      <h2>Important Scope</h2>
+      <p>
+        This research is honest about its limits. The evaluation is intentionally curated and local:
+      </p>
+      <ul class="scope-list">
+        <li><strong>Scale:</strong> 8 routing scenarios, 5 synthesis scenarios. Small, but ground-truthed and repeatable.</li>
+        <li><strong>Environment:</strong> Instrumented local evaluation. Not adversarial benchmarks or wild datasets.</li>
+        <li><strong>Status:</strong> Pre-publication; external peer review and replication pending.</li>
+        <li><strong>Next:</strong> Scaling to larger scenario sets, broader vocabulary registers, and cross-domain validation.</li>
+      </ul>
+      <p>
+        The claim is modest: cognitive alignment improves legibility and measurable coordination in multi-agent systems at this scope. Not a universal theory; a concrete proof.
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <h2>Why This Matters for B1C3</h2>
+      <p>
+        B1C3 is built around cognitive clarity and auditable systems. Cognitive alignment is operational proof that you can make system design serve human mental models without sacrificing precision.
+      </p>
+      <p>
+        This research validates that it's possible to build systems where what the machine does matches what humans expect to happen—not because of UX tricks, but because the substrate itself is cognitively aligned.
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <h2>Explore the Work</h2>
+      <p>The research is published and reproducible:</p>
+      <ul class="resource-list">
+        <li><strong>Paper:</strong> "Cognitive Alignment as System Substrate" (6-page submission)</li>
+        <li><strong>Code:</strong> Fraga runtime with SOUL and Aishna implementations</li>
+        <li><strong>Data:</strong> Test scenarios, evaluation scripts, results with ground truth</li>
+        <li><strong>Repository:</strong> <a href="https://github.com/B1C3Game/fraga" target="_blank" rel="noreferrer">github.com/B1C3Game/fraga</a></li>
+      </ul>
+      <a class="button primary" href="https://github.com/B1C3Game/fraga/blob/main/paper/PAPER_SUBMISSION_6P.md" target="_blank" rel="noreferrer">Read the Paper</a>
+      <a class="button ghost" href="https://github.com/B1C3Game/fraga" target="_blank" rel="noreferrer">Explore the Repository</a>
+    </section>
+
+    <section class="panel reveal">
+      <p class="back-link"><a href="index.html#projects">← Back to Projects</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer reveal">
+    <p><a href="index.html">B1C3 Home</a></p>
+  </footer>
+
+  <style>
+    .note {
+      font-size: 0.95em;
+      color: #666;
+      font-style: italic;
+      margin-top: 0.5em;
+    }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5em;
+      margin: 2em 0;
+    }
+
+    .result-item {
+      padding: 1.5em;
+      border-left: 3px solid #334a5f;
+      background: rgba(51, 74, 95, 0.03);
+    }
+
+    .result-item h3 {
+      margin: 0 0 0.5em 0;
+      font-size: 0.95em;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #334a5f;
+    }
+
+    .metric {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #111;
+      margin: 0.5em 0;
+      font-family: 'Libre Baskerville', serif;
+    }
+
+    .scope-list, .resource-list {
+      margin: 1.5em 0;
+      padding-left: 2em;
+      line-height: 1.8;
+    }
+
+    .scope-list li, .resource-list li {
+      margin: 0.8em 0;
+    }
+
+    .scope-list strong, .resource-list strong {
+      color: #334a5f;
+    }
+
+    .back-link {
+      text-align: center;
+      margin: 3em 0 1em;
+    }
+
+    .back-link a {
+      color: #334a5f;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    .evaluation-context {
+      margin-top: 1.2rem;
+      padding: 1rem 1.1rem;
+      border-left: 3px solid #8fa4b7;
+      background: rgba(143, 164, 183, 0.08);
+    }
+
+    .evaluation-context h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1rem;
+      color: #263949;
+    }
+
+    .metric-meaning {
+      margin-top: 1.2rem;
+      padding: 1rem 1.1rem;
+      border-left: 3px solid #334a5f;
+      background: rgba(51, 74, 95, 0.05);
+    }
+
+    .metric-meaning h3 {
+      margin: 0 0 0.6rem;
+      font-size: 1rem;
+      color: #1d2d3a;
+    }
+
+    .metric-meaning ul {
+      margin: 0.4rem 0 0.7rem;
+      padding-left: 1.2rem;
+      line-height: 1.65;
+    }
+
+    .metric-meaning li {
+      margin: 0.45rem 0;
+    }
+  </style>
+</body>
+</html>

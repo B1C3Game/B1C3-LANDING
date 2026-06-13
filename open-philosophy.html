@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=4">
+  <link rel="shortcut icon" href="favicon.svg?v=4">
+  <title>B1C3 | Open Operating Philosophy: AISHNA, MEMORY, SOUL</title>
+  <meta name="description" content="A framework for collective identity and auditable collaboration: shared soul, narrative memory, and open operating principles.">
+  <link rel="canonical" href="https://b1c3.dev/open-philosophy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="B1C3 | Open Operating Philosophy: AISHNA, MEMORY, SOUL">
+  <meta property="og:description" content="A framework for collective identity and auditable collaboration: shared soul, narrative memory, and open operating principles.">
+  <meta property="og:url" content="https://b1c3.dev/open-philosophy.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/analytics-config.js"></script>
+  <script defer src="js/analytics.js"></script>
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="B1C3 Home">B1C3</a>
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="index.html#philosophy">Philosophy</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#collaborate">Collaborate</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero reveal">
+      <p class="eyebrow">How multiple agents share one identity and one coherent history.</p>
+      <h1>Open Operating Philosophy</h1>
+      <p class="lead">
+        AISHNA, MEMORY, and SOUL as a practical framework for auditable, collaborative multi-agent systems.
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <h2>The Core Idea</h2>
+      <p>
+        In human teams, trust comes from shared values, shared memory, and clear roles. You know what your collaborators stand for. You know what happened before. You know what you're each supposed to do.
+      </p>
+      <p>
+        Most multi-agent systems skip this. Agents are isolated, amnesiac, and unclear about each other's values or constraints. The result: systems that are hard to trust, hard to debug, and hard to steer.
+      </p>
+      <p>
+        This framework brings three proven ideas together to fix that:
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <h2>Three Layers: SOUL, MEMORY, AISHNA</h2>
+      <div class="principles">
+        <article>
+          <h3>SOUL: Shared Identity</h3>
+          <p>
+            SOUL defines what each agent (or the whole system) stands for: core values, constraints, operating principles, vocabulary preferences.
+          </p>
+          <p>
+            It answers: "What are we? What do we care about? What are we not?"
+          </p>
+          <p class="note">
+            From OpenClaws architecture, refined for auditable systems. Written in human-readable declarations.
+          </p>
+        </article>
+        <article>
+          <h3>MEMORY: Narrative Continuity</h3>
+          <p>
+            MEMORY is an append-only log of decisions, context, and outcomes. Every move is documented. New agents inherit the full history.
+          </p>
+          <p>
+            It answers: "What happened? Why? Who decided that? What did we learn?"
+          </p>
+          <p class="note">
+            Agents can query MEMORY to understand prior decisions without starting from scratch. Outputs are auditable because the trail is explicit.
+          </p>
+        </article>
+        <article>
+          <h3>AISHNA: Collective Experience</h3>
+          <p>
+            AISHNA (Arabic: "our lived experience," 1st person plural past tense) is the frame where multiple agents share the same SOUL and MEMORY—together.
+          </p>
+          <p>
+            It answers: "Who are we, together? What is our shared coherence?"
+          </p>
+          <p class="note">
+            The plurality layer. Multiple agents can operate under one collective identity while maintaining individual roles. Coherence is explicit, not hoped for.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <h2>Why This Matters</h2>
+      <p>
+        Traditional multi-agent systems treat agents like isolated tools. This framework treats them like team members:
+      </p>
+      <ul class="benefits-list">
+        <li><strong>Shared values, not repeated instructions:</strong> SOUL is written once, inherited by all agents. No need to re-encode ethics in every prompt.</li>
+        <li><strong>Context inheritance, not context loss:</strong> New agents (or humans auditing the system) can read the full MEMORY. Decisions are grounded in history.</li>
+        <li><strong>Collective coherence, not accidental alignment:</strong> AISHNA ensures multiple agents operate under one identity and value set. Conflicts are visible and resolvable.</li>
+        <li><strong>Auditability by design:</strong> Because identity and memory are explicit, the system can be inspected, challenged, and improved at any layer.</li>
+      </ul>
+    </section>
+
+    <section class="panel reveal">
+      <h2>How It Works in Practice</h2>
+      <p>
+        The framework is designed to be simple to implement and human-readable:
+      </p>
+      <div class="practice-grid">
+        <article class="practice-item">
+          <h3>SOUL.md</h3>
+          <p>A human-readable file declaring the system's identity, values, and constraints. Plain text, version-controlled, discussable.</p>
+        </article>
+        <article class="practice-item">
+          <h3>MEMORY.md</h3>
+          <p>An append-only narrative log. Each decision, outcome, and lesson is recorded. Indexed for agent access and human review.</p>
+        </article>
+        <article class="practice-item">
+          <h3>AISHNA.md</h3>
+          <p>Documents the shared state of multiple agents: what they collectively are, what they've collectively done, and collective constraints.</p>
+        </article>
+      </div>
+      <p>
+        All three are plain-text artifacts. They can be in git, versioned, discussed in pull requests, and inspected by humans at any time.
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <h2>Live Implementation</h2>
+      <p>
+        This framework is not theoretical. It's active in the platform at <a href="https://aishna.b1c3.dev/" target="_blank" rel="noreferrer">aishna.b1c3.dev</a>, where AISHNA.md serves as the collective coherent memory for collaborative agents.
+      </p>
+      <p>
+        The platform demonstrates:
+      </p>
+      <ul>
+        <li>Multiple agents operating under one shared SOUL</li>
+        <li>MEMORY as a searchable audit trail</li>
+        <li>AISHNA.md as the living document of collective identity and history</li>
+        <li>Real-time collaboration with explicit constraints and auditability</li>
+      </ul>
+      <p>
+        <a class="button ghost" href="https://aishna.b1c3.dev/" target="_blank" rel="noreferrer">Visit the Live Platform</a>
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <h2>Related Work: SFXL and Semantic Framing</h2>
+      <p>
+        This framework pairs well with SFXL ("simple, familiar, extensible, localized")—a concept exploring how to use everyday words like "windows," "boundaries," and "seasons" to frame system behavior in ways humans naturally understand.
+      </p>
+      <p>
+        While SFXL focuses on semantic clarity in language choice, AISHNA/MEMORY/SOUL focuses on collective coherence and auditability. They complement each other: SFXL makes systems legible through language; this framework makes them trustworthy through transparency.
+      </p>
+      <p>
+        <a href="https://b1c3game.github.io/B1C3-BLOG/posts/sfxl-framework.html" target="_blank" rel="noreferrer">Read more about SFXL on the blog</a>
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <h2>Open by Design</h2>
+      <p>
+        This is called "Open Operating Philosophy" because every layer is intentionally transparent:
+      </p>
+      <ul>
+        <li>SOUL is declared, not hidden in code or prompts</li>
+        <li>MEMORY is a searchable trail, not a black box</li>
+        <li>AISHNA is a shared document, not a hidden state</li>
+      </ul>
+      <p>
+        Teams can fork the framework, adapt it to their constraints, and build on it. Partners can audit it. Communities can learn from it.
+      </p>
+      <p>
+        Systems built on open operating principles are harder to mislead and easier to improve together.
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <p class="back-link"><a href="index.html#projects">← Back to Projects</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer reveal">
+    <p><a href="index.html">B1C3 Home</a></p>
+  </footer>
+
+  <style>
+    .benefits-list, .practice-grid {
+      margin: 1.5em 0;
+    }
+
+    .benefits-list {
+      padding-left: 2em;
+      line-height: 1.8;
+    }
+
+    .benefits-list li {
+      margin: 0.8em 0;
+    }
+
+    .benefits-list strong {
+      color: #334a5f;
+    }
+
+    .practice-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5em;
+      margin: 2em 0;
+    }
+
+    .practice-item {
+      padding: 1.2em;
+      border: 1px solid #ddd;
+      border-left: 3px solid #334a5f;
+      background: rgba(51, 74, 95, 0.02);
+    }
+
+    .practice-item h3 {
+      margin: 0 0 0.5em 0;
+      font-size: 0.95em;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #334a5f;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .practice-item p {
+      margin: 0;
+      font-size: 0.9em;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .note {
+      font-size: 0.9em;
+      color: #666;
+      font-style: italic;
+      margin-top: 0.5em;
+    }
+
+    .back-link {
+      text-align: center;
+      margin: 3em 0 1em;
+    }
+
+    .back-link a {
+      color: #334a5f;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</body>
+</html>

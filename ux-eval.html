@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=4">
+  <link rel="shortcut icon" href="favicon.svg?v=4">
+  <title>B1C3 | UX Evaluation: Live-Site Accessibility and Reported Remediation</title>
+  <meta name="description" content="B1C3-UX-EVAL runs live-site UX accessibility checks, scores risk, and produces remediation-ready reports. Pair with ux-tools to implement fixes faster.">
+  <link rel="canonical" href="https://b1c3.dev/ux-eval.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="B1C3 | UX Evaluation: Live-Site Accessibility and Reported Remediation">
+  <meta property="og:description" content="Live internet page checks, severity-ranked findings, and report-first remediation for accessibility UX.">
+  <meta property="og:url" content="https://b1c3.dev/ux-eval.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/analytics-config.js"></script>
+  <script defer src="js/analytics.js"></script>
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="B1C3 Home">B1C3</a>
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="index.html#philosophy">Philosophy</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#collaborate">Collaborate</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero reveal">
+      <p class="eyebrow">Accessibility UX as measurable operations, not guesswork.</p>
+      <h1>B1C3 UX Evaluation</h1>
+      <p class="lead">
+        Live-site accessibility checks with report-first remediation. Audit what users actually experience, score risk clearly, and fix in priority order.
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <h2>The Problem It Solves</h2>
+      <p>
+        Teams often believe a site is usable because it "looks fine" or passes a few static checks. Real users still hit friction: keyboard traps, unclear forms, weak semantics, inaccessible navigation.
+      </p>
+      <p>
+        B1C3-UX-EVAL closes that gap. It runs a repeatable Tier 0 accessibility UX baseline on live pages, then translates findings into a practical remediation path.
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <h2>What Gets Evaluated</h2>
+      <p>
+        The baseline model covers six high-impact layers aligned to WCAG 2.1 AA intent:
+      </p>
+      <div class="principles">
+        <article>
+          <h3>1. Contrast and Alt Text</h3>
+          <p>Detects readability and image-description gaps that block perception.</p>
+        </article>
+        <article>
+          <h3>2. Focus Management</h3>
+          <p>Checks keyboard focus visibility/order and interaction continuity.</p>
+        </article>
+        <article>
+          <h3>3. Semantic HTML</h3>
+          <p>Inspects structural meaning so assistive tools can parse content correctly.</p>
+        </article>
+        <article>
+          <h3>4. ARIA Attributes</h3>
+          <p>Finds missing or conflicting accessibility metadata in interactive components.</p>
+        </article>
+        <article>
+          <h3>5. Form Accessibility</h3>
+          <p>Evaluates labels, instructions, errors, and completion flow quality.</p>
+        </article>
+        <article>
+          <h3>6. Navigation Structure</h3>
+          <p>Reviews orientation and movement clarity across the site experience.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <h2>How The Workflow Runs</h2>
+      <div class="workflow-grid">
+        <article class="workflow-item">
+          <h3>Step 1: Live-Page Checks</h3>
+          <p>Run automated detection on real internet pages, then manually verify key findings.</p>
+        </article>
+        <article class="workflow-item">
+          <h3>Step 2: Severity Scoring</h3>
+          <p>Issue impact is weighted (critical/high/medium/low) and rolled into interpretable scoring.</p>
+        </article>
+        <article class="workflow-item">
+          <h3>Step 3: Report Output</h3>
+          <p>Generate findings in report form: per-check breakdown, examples, and location-specific patterns.</p>
+        </article>
+        <article class="workflow-item">
+          <h3>Step 4: Remediation Plan</h3>
+          <p>Deliver prioritized fixes so teams resolve blockers first and improve user outcomes faster.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <h2>What The Report Gives You</h2>
+      <ul class="report-list">
+        <li><strong>Overall score (0-100):</strong> A clear baseline quality signal.</li>
+        <li><strong>Per-check scoring:</strong> Six-category visibility into strengths and weaknesses.</li>
+        <li><strong>Severity-ranked findings:</strong> Critical/high/medium/low mapped to user impact.</li>
+        <li><strong>Issue patterns by location:</strong> Where friction clusters and why.</li>
+        <li><strong>Fix roadmap:</strong> Prioritized actions that are immediately implementable.</li>
+      </ul>
+      <p>
+        This is the UX angle: not only finding defects, but translating technical issues into human impact and decision-ready remediation.
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <h2>B1C3-UX-EVAL vs ux-tools</h2>
+      <p>
+        These two repositories are complementary and intentional:
+      </p>
+      <div class="compare-grid">
+        <article class="compare-item">
+          <h3>B1C3-UX-EVAL</h3>
+          <p>Assessment capability. Tells you what is wrong, where risk is concentrated, and what to fix first.</p>
+        </article>
+        <article class="compare-item">
+          <h3>ux-tools</h3>
+          <p>Implementation capability. Utilities and patterns that help teams build/fix accessible UX in code.</p>
+        </article>
+      </div>
+      <p class="protocol-note">
+        Read it as a loop: evaluate with B1C3-UX-EVAL, implement with ux-tools, re-evaluate for measurable improvement.
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <h2>Concrete Use Cases</h2>
+      <ul class="report-list">
+        <li><strong>Pre-launch readiness:</strong> Catch accessibility blockers before public release.</li>
+        <li><strong>Redesign baseline:</strong> Measure before-and-after UX quality and show progress.</li>
+        <li><strong>Accessibility debt triage:</strong> Focus teams on highest-impact fixes first.</li>
+        <li><strong>Portfolio benchmarking:</strong> Compare multiple properties under one scoring model.</li>
+        <li><strong>Ongoing quality gate:</strong> Re-run checks as part of continuous UX operations.</li>
+      </ul>
+    </section>
+
+    <section class="panel reveal">
+      <h2>Scope and Honesty</h2>
+      <p>
+        This is a Tier 0 baseline, not a complete UX maturity model. Automated checks catch common high-impact issues, but nuanced edge cases still require manual review and contextual judgment.
+      </p>
+      <p>
+        That is a feature, not a flaw: B1C3-UX-EVAL is designed for reliable first-pass clarity and fast remediation planning on live properties.
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <h2>Explore The Live Artifact</h2>
+      <p>
+        <a class="button primary" href="https://b1c3game.github.io/B1C3-UX-EVAL/" target="_blank" rel="noreferrer">Open Live UX Evaluation</a>
+        <a class="button ghost" href="https://github.com/B1C3Game/ux-tools" target="_blank" rel="noreferrer">Open ux-tools</a>
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <p class="back-link"><a href="index.html#projects">← Back to Projects</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer reveal">
+    <p><a href="index.html">B1C3 Home</a></p>
+  </footer>
+
+  <style>
+    .workflow-grid, .compare-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5em;
+      margin: 2em 0;
+    }
+
+    .workflow-item, .compare-item {
+      padding: 1.2em;
+      border: 1px solid #ddd;
+      border-left: 3px solid #334a5f;
+      background: rgba(51, 74, 95, 0.03);
+    }
+
+    .workflow-item h3, .compare-item h3 {
+      margin: 0 0 0.6em;
+      font-size: 0.95em;
+      color: #334a5f;
+    }
+
+    .workflow-item p, .compare-item p {
+      margin: 0;
+      font-size: 0.92em;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .report-list {
+      margin: 1.2em 0;
+      padding-left: 1.7em;
+      line-height: 1.75;
+    }
+
+    .report-list li {
+      margin: 0.5em 0;
+    }
+
+    .report-list strong {
+      color: #334a5f;
+    }
+
+    .protocol-note {
+      margin-top: 1em;
+      color: #666;
+      font-style: italic;
+    }
+
+    .back-link {
+      text-align: center;
+      margin: 3em 0 1em;
+    }
+
+    .back-link a {
+      color: #334a5f;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</body>
+</html>
