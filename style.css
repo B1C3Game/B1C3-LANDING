@@ -182,6 +182,36 @@ h1 {
   line-height: 1.5;
 }
 
+.turbulence-visual {
+  margin: 0.8rem 0 1.2rem;
+}
+
+.turbulence-figure {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #6b9ac4;
+}
+
+.turbulence-figure img {
+  display: block;
+  width: 100%;
+  height: min(52vh, 560px);
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.turbulence-figure figcaption {
+  padding: 0.7rem 0.9rem 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(243, 241, 234, 0.9);
+  color: var(--ink-soft);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
 .button {
   display: inline-block;
   border-radius: 999px;
@@ -335,43 +365,74 @@ blockquote.proof-result {
   padding-bottom: 3rem;
 }
 
-.motif svg {
-  width: min(360px, 100%);
-  height: auto;
-  transform: perspective(760px) rotateX(7deg) rotateY(-8deg);
-  transform-origin: 50% 50%;
+.contact-figure {
+  margin: 0 0 1rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #6b9ac4;
 }
 
-.motif .motif-spokes {
-  filter: drop-shadow(0 1px 1px rgba(24, 34, 44, 0.24));
+.contact-figure img {
+  display: block;
+  width: 100%;
+  height: min(44vh, 460px);
+  object-fit: cover;
+  object-position: center 48%;
 }
 
-.motif .spoke {
-  fill: url(#motifSpoke);
-  opacity: 0.92;
+.contact-figure figcaption {
+  margin: 0;
+  padding: 0.7rem 0.9rem 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(243, 241, 234, 0.9);
+  color: var(--ink-soft);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.76rem;
+  line-height: 1.5;
 }
 
-.motif .node {
-  stroke: #f2eee5;
-  stroke-width: 1.6;
+.footer-figure {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #6b9ac4;
 }
 
-.motif .node-light {
-  fill: url(#motifNodeLight);
-  opacity: 0.9;
+.footer-figure img {
+  display: block;
+  width: 100%;
+  height: min(48vh, 520px);
+  object-fit: cover;
+  object-position: center 42%;
 }
 
-.motif .node-emphasis {
-  fill: url(#motifCenter);
-  stroke: #fbf8f0;
-  stroke-width: 2;
-  filter: drop-shadow(0 2px 2px rgba(18, 25, 32, 0.28));
+.footer-note {
+  margin: 0;
+  padding: 0.7rem 0.9rem 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  color: var(--ink-soft);
+  background: rgba(243, 241, 234, 0.9);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.footer-figure a {
+  color: #173a55;
+  font-weight: 700;
+}
+
+.footer-figure a:hover {
+  color: #0e2a3f;
 }
 
 .micro {
   font-family: "JetBrains Mono", monospace;
   color: var(--ink-soft);
   font-size: 0.82rem;
+  margin-top: auto;
 }
 
 a:focus-visible,
