@@ -9,3 +9,6 @@ Thumbs.db
 # Temp
 *.tmp
 *.log
+
+# Local planning notes (do not commit)
+FUTURE-PLAN-LOCAL.md
