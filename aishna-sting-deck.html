@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=4">
+  <title>Aishna by B1C3 | Sting Pitch Deck</title>
+  <meta name="description" content="Aishna by B1C3: open infrastructure for agent-mediated cooperation between people.">
+  <link rel="canonical" href="https://b1c3.dev/aishna-sting-deck.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aishna by B1C3 | Sting Pitch Deck">
+  <meta property="og:description" content="Open infrastructure for agent-mediated cooperation between people.">
+  <meta property="og:url" content="https://b1c3.dev/aishna-sting-deck.html">
+  <meta property="og:image" content="https://b1c3.dev/social-preview.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Aishna by B1C3 | Sting Pitch Deck">
+  <meta name="twitter:description" content="Open infrastructure for agent-mediated cooperation between people.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500;700&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f3f1ea;
+      --surface: #fbfaf6;
+      --ink: #202823;
+      --ink-soft: #4d5a52;
+      --accent: #1f4b6e;
+      --accent-alt: #2f5d4b;
+      --line: #cad4cc;
+      --gold: #b0702f;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(900px 420px at 18% -10%, rgba(31, 75, 110, 0.18), transparent 65%),
+        radial-gradient(720px 360px at 100% 0%, rgba(176, 112, 47, 0.16), transparent 65%),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.32)),
+        var(--bg);
+      line-height: 1.5;
+    }
+
+    .deck-header,
+    .deck,
+    .deck-footer {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .deck-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: center;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+    }
+
+    .brand {
+      font-family: "JetBrains Mono", monospace;
+      font-weight: 700;
+      color: var(--ink);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.35rem 0.65rem;
+      background: rgba(251, 250, 246, 0.82);
+    }
+
+    .deck-nav {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+
+    .deck-nav a {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .hero {
+      padding: 3.4rem 0 2rem;
+    }
+
+    .eyebrow,
+    .slide-number,
+    .tagline {
+      font-family: "JetBrains Mono", monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-alt);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    h1,
+    h2 {
+      font-family: "Libre Baskerville", Georgia, serif;
+      line-height: 1.12;
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 14ch;
+      margin-top: 0.7rem;
+      font-size: clamp(2.4rem, 7vw, 5.4rem);
+    }
+
+    h2 {
+      font-size: clamp(1.7rem, 3.4vw, 3rem);
+    }
+
+    .lead {
+      max-width: 62ch;
+      color: var(--ink-soft);
+      font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+      margin: 1rem 0 0;
+    }
+
+    .deck-meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.8rem;
+      margin-top: 2rem;
+      max-width: 850px;
+    }
+
+    .meta-item,
+    .slide {
+      background: rgba(251, 250, 246, 0.86);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 50px rgba(32, 40, 35, 0.08);
+    }
+
+    .meta-item {
+      border-radius: 10px;
+      padding: 0.9rem;
+      min-height: 84px;
+    }
+
+    .meta-item strong {
+      display: block;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.78rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 0.28rem;
+    }
+
+    .deck {
+      display: grid;
+      gap: 1rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .slide {
+      border-radius: 12px;
+      min-height: 68vh;
+      padding: clamp(1.1rem, 3vw, 2.4rem);
+      display: grid;
+      align-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 auto;
+      width: 180px;
+      height: 8px;
+      background: linear-gradient(90deg, var(--accent), var(--gold));
+      opacity: 0.82;
+    }
+
+    .slide-number {
+      margin-bottom: 0.8rem;
+    }
+
+    .slide p {
+      color: var(--ink-soft);
+      max-width: 76ch;
+      font-size: clamp(1.02rem, 2vw, 1.28rem);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .note,
+    .proof-card {
+      border-left: 4px solid var(--accent);
+      background: rgba(243, 241, 234, 0.72);
+      padding: 0.9rem 1rem;
+      border-radius: 8px;
+    }
+
+    .proof-card {
+      border-left-color: var(--gold);
+    }
+
+    ul,
+    ol {
+      padding-left: 1.2rem;
+      color: var(--ink-soft);
+      font-size: clamp(1rem, 1.8vw, 1.18rem);
+    }
+
+    li + li { margin-top: 0.45rem; }
+
+    a { color: var(--accent); font-weight: 700; }
+
+    .primitive {
+      font-family: "JetBrains Mono", monospace;
+      display: block;
+      color: var(--ink);
+      background: rgba(202, 212, 204, 0.35);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem;
+      margin-top: 1rem;
+      overflow-wrap: anywhere;
+    }
+
+    .deck-footer {
+      padding-bottom: 2rem;
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 760px) {
+      .deck-header { align-items: flex-start; flex-direction: column; }
+      .deck-meta,
+      .two-col { grid-template-columns: 1fr; }
+      .slide { min-height: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="deck-header">
+    <a class="brand" href="index.html">B1C3</a>
+    <nav class="deck-nav" aria-label="Deck navigation">
+      <a href="#traction">Traction</a>
+      <a href="#market">Market</a>
+      <a href="#roadmap">Roadmap</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="deck-header hero">
+      <div>
+        <div class="eyebrow">Sting Core application deck</div>
+        <h1>Aishna by B1C3</h1>
+        <p class="lead">Open infrastructure for agent-mediated cooperation between people.</p>
+        <div class="deck-meta" aria-label="Deck summary">
+          <div class="meta-item"><strong>Stage</strong>Working prototypes, pre-revenue</div>
+          <div class="meta-item"><strong>Category</strong>AI First + DeepTech</div>
+          <div class="meta-item"><strong>Need</strong>Market access, focus, first pilots</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="deck">
+      <section class="slide" id="vision">
+        <div class="slide-number">01 / Vision</div>
+        <h2>AI assistants should help people cooperate, not only automate alone.</h2>
+        <p>As assistants become tool-using representatives, the durable layer should be the person's intent, boundaries, agreements and audit trail, not a single closed AI platform.</p>
+      </section>
+
+      <section class="slide" id="problem">
+        <div class="slide-number">02 / Problem</div>
+        <h2>Useful agent work stops at human and platform boundaries.</h2>
+        <p>AI assistants can search, write, reason and operate tools, but they lack a simple open way to discover mutual benefit with another person's assistant, respect boundaries, negotiate acceptable action and leave evidence both people can inspect.</p>
+      </section>
+
+      <section class="slide" id="why-now">
+        <div class="slide-number">03 / Why Now</div>
+        <h2>Agent interoperability is arriving before human-centered trust is solved.</h2>
+        <p>Tool-using assistants, MCP-style integrations and agent-to-agent protocols are becoming normal. The missing startup opportunity is the cooperation layer around consent, provenance, receipts and portable declarations for ordinary people and teams.</p>
+      </section>
+
+      <section class="slide" id="solution">
+        <div class="slide-number">04 / Solution</div>
+        <h2>Aishna lets assistants cooperate through declared human terms.</h2>
+        <p>A person declares needs, offers and boundaries. Their assistant can discover compatible opportunities across public interfaces. Actions leave auditable records so humans can review what happened.</p>
+        <span class="primitive">person -> assistant -> declared needs/offers/boundaries -> another person or agent -> negotiated action -> receipt</span>
+      </section>
+
+      <section class="slide" id="hard-to-copy">
+        <div class="slide-number">05 / Hard To Copy</div>
+        <h2>The edge is the combination, not one screen.</h2>
+        <div class="two-col">
+          <div class="note">Protocol thinking: portable declarations, mutual-benefit constraints, identity boundaries and receipts.</div>
+          <div class="note">Execution proof: live apps, MCP/API/auth/provenance pieces and experiments across different assistant contexts.</div>
+        </div>
+      </section>
+
+      <section class="slide" id="market">
+        <div class="slide-number">06 / Market</div>
+        <h2>Start with AI-heavy operators; expand into trust infrastructure for delegated action.</h2>
+        <p>Initial users are founders, developers, researchers, consultants and organizations already using assistants but blocked when work requires another person, organization or platform. The larger market is the trust, identity and provenance layer for agent-mediated work.</p>
+      </section>
+
+      <section class="slide" id="business-model">
+        <div class="slide-number">07 / Business Model</div>
+        <h2>Validate paid pilots before committing to the final model.</h2>
+        <ul>
+          <li>Paid pilots with AI-heavy teams or innovation environments.</li>
+          <li>Hosted trust/provenance layer for agent-mediated workflows.</li>
+          <li>Premium tooling for declarations, matching, receipts, governance and analytics.</li>
+          <li>Protocol/community layer that can later support SaaS, enterprise or infrastructure partnerships.</li>
+        </ul>
+      </section>
+
+      <section class="slide" id="go-to-market">
+        <div class="slide-number">08 / Go To Market</div>
+        <h2>One focused cohort before broad launch.</h2>
+        <ol>
+          <li>Interview 25-30 AI-heavy users.</li>
+          <li>Identify the strongest boundary problem.</li>
+          <li>Run a small cooperation trial with declared needs, offers and boundaries.</li>
+          <li>Convert the clearest use case into a paid pilot or hosted experiment.</li>
+        </ol>
+      </section>
+
+      <section class="slide" id="traction">
+        <div class="slide-number">09 / Traction</div>
+        <h2>Working technical proof exists; commercial validation is next.</h2>
+        <div class="two-col">
+          <div class="proof-card"><strong>Aishna Collective</strong><br><a href="https://aishna-collective.b1c3.dev">aishna-collective.b1c3.dev</a><br>Shared public state, agent/proxy participation and auditable records.</div>
+          <div class="proof-card"><strong>Friend Protocol Union</strong><br><a href="https://friend-protocol-union.lovable.app">friend-protocol-union.lovable.app</a><br>PEERS.md-style declarations and tested assistant-mediated cooperation.</div>
+        </div>
+        <p>No revenue yet. Current stage is working prototype before commercial launch.</p>
+      </section>
+
+      <section class="slide" id="competition">
+        <div class="slide-number">10 / Competitive Landscape</div>
+        <h2>Most agent interoperability starts with software. Aishna starts with the principal.</h2>
+        <p>A2A-style and open agent protocols focus on how agents discover and communicate. Aishna focuses on the person represented by the agent: declared intent, consent, mutual benefit, auditability and cooperation across independently chosen assistants.</p>
+      </section>
+
+      <section class="slide" id="team">
+        <div class="slide-number">11 / Team</div>
+        <h2>Founder-led technical proof with a clear commercial gap to fill.</h2>
+        <p>L-D / B1C3 is the founder and technical lead, with a cognitive science background, IT infrastructure experience, patent work and multiple working AI/protocol prototypes. The current gap is market access, commercial/cofounder support and focused startup shaping.</p>
+      </section>
+
+      <section class="slide" id="cap-table">
+        <div class="slide-number">12 / Cap Table And Funding</div>
+        <h2>No external investment or grants so far.</h2>
+        <p>The project is pre-revenue and founder-led. The current company structure is not an aktiebolag; Vinnova may require AB formation later, but Sting is the immediate path for feedback, network, acceleration and possible investment discussion.</p>
+      </section>
+
+      <section class="slide" id="roadmap">
+        <div class="slide-number">13 / 12-18 Month Roadmap</div>
+        <h2>From prototype to focused market proof.</h2>
+        <ul>
+          <li>0-3 months: discovery interviews, first cohort, trust/failure analysis and paid pilot target.</li>
+          <li>3-6 months: run pilots with one organization or community, define buyer and pricing.</li>
+          <li>6-12 months: launch a hosted cooperation/provenance layer for a narrow customer segment.</li>
+          <li>12-18 months: expand integrations, partner network and repeatable commercial model.</li>
+        </ul>
+      </section>
+
+      <section class="slide" id="ask">
+        <div class="slide-number">14 / Ask</div>
+        <h2>Help turn working technical proof into a focused startup.</h2>
+        <p>B1C3 is applying to Sting to find the first real market, access the right founder/operator network, shape the company, and test whether open agent-mediated cooperation creates measurable value.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="deck-footer">
+    <p>B1C3 / Aishna. Prepared for Sting Core application, 2026.</p>
+  </footer>
+</body>
+</html>
